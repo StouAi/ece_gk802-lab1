@@ -24,6 +24,8 @@ if __name__ == "__main__":
         print(f"{header}: {value}\n")
 
     find_cookies(response)
-
-    print(f"Server: {server_header}")
+    if server_header:
+        print(f"Server: {server_header}")
+    else:
+        print("Server header not found")
 
